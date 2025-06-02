@@ -1,0 +1,14 @@
+const texts = [
+  "I am a graphic designer",
+  "I create logos and brand designs",
+  "I love minimal and modern styles",
+  "Let’s work together on your project"
+];
+
+let count = 0;
+const animatedText = document.getElementById("animated-text");
+
+setInterval(() => {
+  count = (count + 1) % texts.length;
+  animatedText.textContent = texts[count];
+}, 3000);
