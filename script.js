@@ -1,8 +1,8 @@
 const text = document.getElementById("animated-text");
 const phrases = [
   "I am a graphic designer",
-  "I create modern logos",
-  "I love minimalist design"
+  "I design modern brands",
+  "I create digital stories"
 ];
 
 let i = 0;
