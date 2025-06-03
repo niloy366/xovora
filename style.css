@@ -26,6 +26,13 @@ nav {
   font-weight: bold;
 }
 
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
 .nav-links {
   list-style: none;
   display: flex;
@@ -42,16 +49,15 @@ nav {
 header {
   background: linear-gradient(to right, #6a11cb, #2575fc);
   color: white;
-  padding: 80px 20px;
+  padding: 150px 20px;
   text-align: center;
 }
 
 header h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 header h2 {
-  font-size: 1.2rem;
   margin-top: 1rem;
 }
 
@@ -61,22 +67,21 @@ section {
 }
 
 section h2 {
-  margin-bottom: 20px;
   font-size: 2rem;
+  margin-bottom: 20px;
 }
 
 .gallery {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  flex-wrap: wrap;
-  margin-top: 20px;
 }
 
 .work {
+  background: #ddd;
   width: 150px;
   height: 100px;
-  background: #ddd;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -90,17 +95,22 @@ footer {
   padding: 20px;
 }
 
-/* 🔽 Responsive Design Starts Here */
+/* Responsive Design */
 @media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    align-items: flex-start;
+  .menu-icon {
+    display: block;
   }
 
   .nav-links {
+    display: none;
     flex-direction: column;
-    gap: 10px;
     width: 100%;
+    background-color: #222;
+    padding: 1rem 0;
+  }
+
+  .nav-links.active {
+    display: flex;
   }
 
   header h1 {
@@ -109,15 +119,6 @@ footer {
 
   header h2 {
     font-size: 1rem;
-  }
-
-  section h2 {
-    font-size: 1.5rem;
-  }
-
-  .gallery {
-    flex-direction: column;
-    align-items: center;
   }
 
   .work {
