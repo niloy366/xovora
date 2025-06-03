@@ -8,8 +8,10 @@
 </head>
 <body>
 
+  <!-- Navigation Bar -->
   <nav>
     <div class="logo">Xovora</div>
+    <div id="menu-toggle" class="menu-icon">&#9776;</div>
     <ul class="nav-links">
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
@@ -19,16 +21,19 @@
     </ul>
   </nav>
 
+  <!-- Hero Section -->
   <header id="home">
     <h1>Hi, I am Niloy Akon</h1>
     <h2 id="animated-text">I am a graphic designer</h2>
   </header>
 
+  <!-- About Section -->
   <section id="about">
     <h2>About Me</h2>
-    <p>I’m Niloy Akon, a passionate graphic designer and the creative mind behind Xovora. I create modern, minimalist designs for startups and brands.</p>
+    <p>I’m Niloy Akon, a passionate graphic designer and creative mind behind Xovora. I specialize in creating modern, minimalist designs for startups and brands.</p>
   </section>
 
+  <!-- Services Section -->
   <section id="services">
     <h2>Services</h2>
     <ul>
@@ -39,24 +44,38 @@
     </ul>
   </section>
 
+  <!-- Portfolio Section -->
   <section id="portfolio">
     <h2>Portfolio</h2>
     <div class="gallery">
       <div class="work">Project 1</div>
       <div class="work">Project 2</div>
       <div class="work">Project 3</div>
+      <div class="work">Project 4</div>
+      <div class="work">Project 5</div>
+      <div class="work">Project 6</div>
     </div>
   </section>
 
+  <!-- Contact Section -->
   <section id="contact">
     <h2>Contact Me</h2>
-    <p>Reach out via email: <a href="mailto:niloy@example.com">niloy@example.com</a></p>
+    <p>📧 Email: <a href="mailto:julhashislamniloy@gmail.com">julhashislamniloy@gmail.com</a></p>
+    <p>📞 Phone: <a href="tel:01623698238">01623698238</a></p>
   </section>
 
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Xovora. Designed by Niloy Akon</p>
   </footer>
 
   <script src="script.js"></script>
+  <script>
+    const menuBtn = document.getElementById("menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+    menuBtn.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
 </body>
 </html>
