@@ -1,56 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Xovora Portfolio</title>
+  <title>Niloy Akon Portfolio</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body>
 
+<body>
   <!-- Navbar -->
   <header>
     <nav class="navbar">
-      <div class="logo">Xovora</div>
+      <h1 class="logo">Niloy</h1>
       <div class="menu-icon" onclick="toggleMenu()">
         <i class="fas fa-bars"></i>
       </div>
       <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h2>Hello, I'm Niloy Akon</h2>
+      <p>Web Developer & Designer</p>
+    </div>
+  </section>
 
   <!-- About Section -->
   <section id="about">
     <div class="container about-wrapper">
       <div class="about-left">
-        <h2>About Me</h2>
-        <p>Hi, I'm Niloy Akon, a graphic designer with 3 years of experience in Photoshop, Illustrator & Canva.</p>
         <ul>
-          <li>📍 Dhaka, Bangladesh</li>
-          <li>📧 niloy@example.com</li>
-          <li>📞 +880123456789</li>
+          <li>Name: Niloy Akon</li>
+          <li>Email: niloy@example.com</li>
+          <li>Phone: 1234567890</li>
         </ul>
       </div>
       <div class="about-center">
-        <img src="profile.jpg" alt="Niloy Akon">
+        <img src="images/profile.jpg" alt="Niloy Akon">
       </div>
       <div class="about-right">
         <div class="skill">
-          <p>Photoshop</p>
-          <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+          <p>HTML</p>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 90%;"></div>
+          </div>
         </div>
         <div class="skill">
-          <p>Illustrator</p>
-          <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
-        </div>
-        <div class="skill">
-          <p>Canva</p>
-          <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+          <p>CSS</p>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 80%;"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -60,35 +69,35 @@
   <section id="services">
     <h2>SERVICES</h2>
     <div class="services-wrapper">
-      <div class="service-box">
-        <div class="service-icon"><i class="fas fa-cogs"></i></div>
-        <div class="service-title">Awesome Features</div>
+      <div class="service-card">
+        <i class="fas fa-cogs"></i>
+        <h3>Awesome Features</h3>
         <p>High-quality designs with modern trends.</p>
       </div>
-      <div class="service-box">
-        <div class="service-icon"><i class="fas fa-magic"></i></div>
-        <div class="service-title">Animated Elements</div>
-        <p>Smooth interactions with CSS animations.</p>
+      <div class="service-card">
+        <i class="fas fa-magic"></i>
+        <h3>Animated Elements</h3>
+        <p>Attractive animations to enhance user experience.</p>
       </div>
-      <div class="service-box">
-        <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
-        <div class="service-title">Responsive Design</div>
-        <p>Looks great on all devices, big or small.</p>
+      <div class="service-card">
+        <i class="fas fa-mobile-alt"></i>
+        <h3>Responsive Design</h3>
+        <p>Looks perfect on all screen sizes.</p>
       </div>
-      <div class="service-box">
-        <div class="service-icon"><i class="fas fa-rocket"></i></div>
-        <div class="service-title">Modern Design</div>
-        <p>Trendy and minimalist layout.</p>
+      <div class="service-card">
+        <i class="fas fa-rocket"></i>
+        <h3>Modern Design</h3>
+        <p>Clean, bold and aesthetic design trends.</p>
       </div>
-      <div class="service-box">
-        <div class="service-icon"><i class="fas fa-eye"></i></div>
-        <div class="service-title">Retina Ready</div>
-        <p>Sharp and clean visuals on all screens.</p>
+      <div class="service-card">
+        <i class="fas fa-eye"></i>
+        <h3>Retina Ready</h3>
+        <p>High-resolution support for modern displays.</p>
       </div>
-      <div class="service-box">
-        <div class="service-icon"><i class="fas fa-headset"></i></div>
-        <div class="service-title">Fast Support</div>
-        <p>Quick response to your queries and issues.</p>
+      <div class="service-card">
+        <i class="fas fa-headset"></i>
+        <h3>Fast Support</h3>
+        <p>Quick support when you need it most.</p>
       </div>
     </div>
   </section>
@@ -113,4 +122,5 @@
     }
   </script>
 </body>
+
 </html>
