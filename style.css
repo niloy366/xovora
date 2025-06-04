@@ -213,3 +213,112 @@ footer {
     text-align: center;
   }
 }
+
+/* About Section Layout */
+#about {
+  background-color: #fff;
+  padding: 60px 20px;
+}
+
+#about .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#about h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.about-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  text-align: left;
+}
+
+/* About Columns */
+.about-left,
+.about-right {
+  flex: 1 1 300px;
+  max-width: 400px;
+}
+
+.about-left h3,
+.about-right h3 {
+  margin-bottom: 15px;
+}
+
+.about-left p,
+.about-right p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.about-left ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.about-left li {
+  margin-bottom: 10px;
+}
+
+/* Center Image */
+.about-center {
+  flex: 1 1 250px;
+  text-align: center;
+}
+
+.about-center img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 5px solid #eee;
+  object-fit: cover;
+}
+
+/* Skill Bars */
+.skill {
+  margin: 15px 0;
+}
+
+.skill p {
+  margin-bottom: 5px;
+}
+
+.skill-bar {
+  background: #eee;
+  border-radius: 10px;
+  height: 10px;
+  overflow: hidden;
+}
+
+.skill-fill {
+  height: 100%;
+  background: #007bff;
+  border-radius: 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .about-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-left,
+  .about-right {
+    max-width: 100%;
+  }
+
+  .about-left ul {
+    text-align: center;
+  }
+}
+
