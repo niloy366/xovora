@@ -1,4 +1,4 @@
-/* Reset and Base Styles */
+/* Global Styles */
 * {
   margin: 0;
   padding: 0;
@@ -48,7 +48,7 @@ nav {
   font-weight: 500;
 }
 
-/* Header */
+/* Header Section */
 header {
   background: linear-gradient(to right, #6a11cb, #2575fc);
   color: white;
@@ -62,53 +62,30 @@ header h1 {
 
 header h2 {
   margin-top: 1rem;
+  font-size: 1.5rem;
+  animation: fadeIn 2s ease-in-out;
 }
 
-/* Section Generic */
-section {
+/* About Section */
+#about {
+  background-color: #fff;
   padding: 60px 20px;
   text-align: center;
 }
 
-section h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-/* Portfolio Gallery */
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.work {
-  background: #ddd;
-  width: 150px;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-}
-
-/* About Section Layout */
 #about .container {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-#about .about-wrapper {
+.about-wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-start;
   gap: 40px;
   text-align: left;
 }
 
-/* About Columns */
 .about-left,
 .about-right {
   flex: 1 1 300px;
@@ -128,7 +105,6 @@ section h2 {
   object-fit: cover;
 }
 
-/* Skill Bars */
 .skill {
   margin: 15px 0;
 }
@@ -150,15 +126,86 @@ section h2 {
   border-radius: 10px;
 }
 
-/* Contact Info List */
-.about-left ul {
-  list-style: none;
-  padding: 0;
-  margin-top: 20px;
+/* Services Section */
+#services {
+  background: #f9f9f9;
+  padding: 60px 20px;
+  text-align: center;
 }
 
-.about-left li {
+#services h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.services-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.service-card {
+  background: #fff;
+  padding: 20px;
+  width: 280px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.service-card i {
+  font-size: 2rem;
+  color: #007bff;
   margin-bottom: 10px;
+}
+
+.service-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* Portfolio Section */
+#portfolio {
+  padding: 60px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+#portfolio h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.work {
+  background: #ddd;
+  width: 200px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.work:hover {
+  background: #007bff;
+  color: #fff;
+  transform: scale(1.05);
 }
 
 /* Footer */
@@ -195,130 +242,6 @@ footer {
     font-size: 1rem;
   }
 
-  .work {
-    width: 80%;
-    max-width: 300px;
-  }
-
-  #about .about-wrapper {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .about-left, .about-right {
-    max-width: 100%;
-  }
-
-  .about-left ul {
-    text-align: center;
-  }
-}
-
-/* About Section Layout */
-#about {
-  background-color: #fff;
-  padding: 60px 20px;
-}
-
-#about .container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-#about h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-}
-
-.about-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 40px;
-  text-align: left;
-}
-
-/* About Columns */
-.about-left,
-.about-right {
-  flex: 1 1 300px;
-  max-width: 400px;
-}
-
-.about-left h3,
-.about-right h3 {
-  margin-bottom: 15px;
-}
-
-.about-left p,
-.about-right p {
-  margin-bottom: 15px;
-  font-size: 1rem;
-  line-height: 1.6;
-}
-
-.about-left ul {
-  list-style: none;
-  padding: 0;
-  margin-top: 20px;
-}
-
-.about-left li {
-  margin-bottom: 10px;
-}
-
-/* Center Image */
-.about-center {
-  flex: 1 1 250px;
-  text-align: center;
-}
-
-.about-center img {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  border: 5px solid #eee;
-  object-fit: cover;
-}
-
-/* Skill Bars */
-.skill {
-  margin: 15px 0;
-}
-
-.skill p {
-  margin-bottom: 5px;
-}
-
-.skill-bar {
-  background: #eee;
-  border-radius: 10px;
-  height: 10px;
-  overflow: hidden;
-}
-
-.skill-fill {
-  height: 100%;
-  background: #007bff;
-  border-radius: 10px;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
   .about-wrapper {
     flex-direction: column;
-    text-align: center;
-  }
-
-  .about-left,
-  .about-right {
-    max-width: 100%;
-  }
-
-  .about-left ul {
-    text-align: center;
-  }
-}
-
+    text-align: center
