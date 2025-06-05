@@ -1,121 +1,31 @@
 <!DOCTYPE html>
-<html lang="bn">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Xovora Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Xovora - Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <script>
-    function toggleMenu() {
-      const links = document.querySelector(".nav-links");
-      links.classList.toggle("active");
-    }
-  </script>
 </head>
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar">
+  <nav>
     <div class="logo">Xovora</div>
-    <div class="menu-icon" onclick="toggleMenu()">☰</div>
     <ul class="nav-links">
-      <li><a href="#about">আমার সম্পর্কে</a></li>
-      <li><a href="#services">সার্ভিস</a></li>
-      <li><a href="#portfolio">পোর্টফোলিও</a></li>
-      <li><a href="#contact">যোগাযোগ</a></li>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
   <!-- Hero Section -->
-  <section class="hero">
-    <h1>স্বাগতম Xovora তে</h1>
-    <p>আমি একজন প্রফেশনাল গ্রাফিক ডিজাইনার</p>
-  </section>
+  <header id="home">
+    <h1>Hi, I am Niloy Akon</h1>
+    <h2 id="animated-text">I am a graphic designer</h2>
+  </header>
 
-  <!-- About Section -->
-  <section id="about">
-    <div class="container">
-      <div class="about-wrapper">
-        <div class="about-left">
-          <h2>আমার সম্পর্কে</h2>
-          <ul>
-            <li>👉 ৩ বছরের অভিজ্ঞতা</li>
-            <li>👉 ফটোশপ, ইলাস্ট্রেটর, ক্যানভা</li>
-            <li>👉 HTML, CSS</li>
-          </ul>
-        </div>
-        <div class="about-center">
-          <img src="your-image.jpg" alt="Niloy"/>
-        </div>
-        <div class="about-right">
-          <h3>স্কিলস</h3>
-          <div class="skill">
-            <p>Photoshop</p>
-            <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div>
-          </div>
-          <div class="skill">
-            <p>Illustrator</p>
-            <div class="skill-bar"><div class="skill-fill" style="width: 85%;"></div></div>
-          </div>
-          <div class="skill">
-            <p>Canva</p>
-            <div class="skill-bar"><div class="skill-fill" style="width: 95%;"></div></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Services Section -->
-  <section id="services">
-    <h2>সার্ভিস সমূহ</h2>
-    <div class="services-wrapper">
-      <div class="service-card"><i>🎨</i><h4>Logo Design</h4></div>
-      <div class="service-card"><i>🖼️</i><h4>Social Media Post</h4></div>
-      <div class="service-card"><i>📄</i><h4>Business Card</h4></div>
-      <div class="service-card"><i>✍️</i><h4>Typography</h4></div>
-      <div class="service-card"><i>💻</i><h4>Web Design</h4></div>
-      <div class="service-card"><i>📞</i><h4>Fast Support</h4></div>
-    </div>
-  </section>
-
-  <!-- Portfolio Section -->
-  <section id="portfolio">
-    <h2>আমার কাজ</h2>
-    <div class="portfolio-wrapper">
-      <div class="card">Project 1</div>
-      <div class="card">Project 2</div>
-      <div class="card">Project 3</div>
-      <div class="card">Project 4</div>
-      <div class="card">Project 5</div>
-      <div class="card">Project 6</div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>যোগাযোগ করুন</h2>
-    <div class="contact-wrapper">
-      <div class="contact-form">
-        <input type="text" placeholder="আপনার নাম" />
-        <input type="email" placeholder="আপনার ইমেইল" />
-        <textarea rows="5" placeholder="মেসেজ লিখুন..."></textarea>
-        <button type="submit">পাঠান</button>
-      </div>
-      <div class="contact-info">
-        <h4>যোগাযোগের তথ্য</h4>
-        <p>📞 ০১৭xxxxxxxx</p>
-        <p>✉️ niloy@example.com</p>
-        <p>📍 ঢাকা, বাংলাদেশ</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Xovora. সর্বস্বত্ব সংরক্ষিত।</p>
-    <p><a href="#">উপরের দিকে ↑</a></p>
-  </footer>
-
+  <script src="script.js"></script>
 </body>
 </html>
