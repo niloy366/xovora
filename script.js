@@ -1,6 +1,13 @@
-const menuIcon = document.querySelector('.menu-icon');
-const navLinks = document.querySelector('.nav-links');
+const text = document.getElementById("animated-text");
+const phrases = [
+  "I am a graphic designer",
+  "I love creating brands",
+  "I design creative stories"
+];
 
-menuIcon.addEventListener('click', () => {
-  navLinks.classList.toggle('active');
-});
+let i = 0;
+setInterval(() => {
+  text.textContent = phrases[i];
+  i = (i + 1) % phrases.length;
+}, 3000);
+
