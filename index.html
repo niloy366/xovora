@@ -1,140 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Xovora Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    function toggleMenu() {
+      const links = document.querySelector(".nav-links");
+      links.classList.toggle("active");
+    }
+  </script>
 </head>
 <body>
 
   <!-- Navbar -->
   <nav class="navbar">
-    <div class="logo">My Portfolio</div>
-    <div class="menu-icon">&#9776;</div>
+    <div class="logo">Xovora</div>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
     <ul class="nav-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about">আমার সম্পর্কে</a></li>
+      <li><a href="#services">সার্ভিস</a></li>
+      <li><a href="#portfolio">পোর্টফোলিও</a></li>
+      <li><a href="#contact">যোগাযোগ</a></li>
     </ul>
   </nav>
 
-  <!-- Hero -->
+  <!-- Hero Section -->
   <section class="hero">
-    <h1>Welcome to My Portfolio</h1>
-    <p>Creative. Passionate. Professional.</p>
+    <h1>স্বাগতম Xovora তে</h1>
+    <p>আমি একজন প্রফেশনাল গ্রাফিক ডিজাইনার</p>
   </section>
 
-  <!-- About -->
+  <!-- About Section -->
   <section id="about">
     <div class="container">
       <div class="about-wrapper">
         <div class="about-left">
-          <h2>About Me</h2>
-          <p>I am a professional graphic designer with expertise in Photoshop and Illustrator, creating visually compelling designs for brands and businesses. With over three years of experience, I specialize in logos, business cards, social media graphics, banners, brochures, and more. My creative approach ensures high-quality, impactful designs that elevate brand identity.</p>
+          <h2>আমার সম্পর্কে</h2>
           <ul>
-            <li><strong>Name:</strong> John Doe</li>
-            <li><strong>Experience:</strong> 5 Years</li>
-            <li><strong>Location:</strong> Dhaka, Bangladesh</li>
+            <li>👉 ৩ বছরের অভিজ্ঞতা</li>
+            <li>👉 ফটোশপ, ইলাস্ট্রেটর, ক্যানভা</li>
+            <li>👉 HTML, CSS</li>
           </ul>
         </div>
         <div class="about-center">
-          <img src="images.jpg" alt="Profile">
+          <img src="your-image.jpg" alt="Niloy"/>
         </div>
         <div class="about-right">
+          <h3>স্কিলস</h3>
           <div class="skill">
-            <p>HTML</p>
-            <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
+            <p>Photoshop</p>
+            <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div>
           </div>
           <div class="skill">
-            <p>CSS</p>
-            <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
+            <p>Illustrator</p>
+            <div class="skill-bar"><div class="skill-fill" style="width: 85%;"></div></div>
           </div>
           <div class="skill">
-            <p>JavaScript</p>
-            <div class="skill-bar"><div class="skill-fill" style="width: 75%"></div></div>
+            <p>Canva</p>
+            <div class="skill-bar"><div class="skill-fill" style="width: 95%;"></div></div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Services -->
+  <!-- Services Section -->
   <section id="services">
-    <h2>Services</h2>
+    <h2>সার্ভিস সমূহ</h2>
     <div class="services-wrapper">
-      <div class="service-card">
-        <i class="fas fa-cogs"></i>
-        <h3>Awesome Features</h3>
-        <p>Clean and functional UI features.</p>
-      </div>
-      <div class="service-card">
-        <i class="fas fa-magic"></i>
-        <h3>Animated Elements</h3>
-        <p>Engaging animations that attract users.</p>
-      </div>
-      <div class="service-card">
-        <i class="fas fa-laptop"></i>
-        <h3>Responsive Design</h3>
-        <p>Works on all screen sizes and devices.</p>
-      </div>
-      <div class="service-card">
-        <i class="fas fa-rocket"></i>
-        <h3>Modern Design</h3>
-        <p>Sleek and modern look and feel.</p>
-      </div>
-      <div class="service-card">
-        <i class="fas fa-eye"></i>
-        <h3>Retina Ready</h3>
-        <p>Crisp and sharp visuals on any display.</p>
-      </div>
-      <div class="service-card">
-        <i class="fas fa-headset"></i>
-        <h3>Fast Support</h3>
-        <p>Quick response to client needs.</p>
-      </div>
+      <div class="service-card"><i>🎨</i><h4>Logo Design</h4></div>
+      <div class="service-card"><i>🖼️</i><h4>Social Media Post</h4></div>
+      <div class="service-card"><i>📄</i><h4>Business Card</h4></div>
+      <div class="service-card"><i>✍️</i><h4>Typography</h4></div>
+      <div class="service-card"><i>💻</i><h4>Web Design</h4></div>
+      <div class="service-card"><i>📞</i><h4>Fast Support</h4></div>
     </div>
   </section>
 
-  <!-- Portfolio -->
+  <!-- Portfolio Section -->
   <section id="portfolio">
-    <h2>My Work</h2>
+    <h2>আমার কাজ</h2>
     <div class="portfolio-wrapper">
       <div class="card">Project 1</div>
       <div class="card">Project 2</div>
       <div class="card">Project 3</div>
       <div class="card">Project 4</div>
+      <div class="card">Project 5</div>
+      <div class="card">Project 6</div>
     </div>
   </section>
 
-  <!-- Contact -->
+  <!-- Contact Section -->
   <section id="contact">
-    <h2>Say Hello to Me</h2>
-    <form>
-      <input type="text" placeholder="Name" required>
-      <input type="email" placeholder="Email" required>
-      <textarea placeholder="Message!"></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+    <h2>যোগাযোগ করুন</h2>
+    <div class="contact-wrapper">
+      <div class="contact-form">
+        <input type="text" placeholder="আপনার নাম" />
+        <input type="email" placeholder="আপনার ইমেইল" />
+        <textarea rows="5" placeholder="মেসেজ লিখুন..."></textarea>
+        <button type="submit">পাঠান</button>
+      </div>
+      <div class="contact-info">
+        <h4>যোগাযোগের তথ্য</h4>
+        <p>📞 ০১৭xxxxxxxx</p>
+        <p>✉️ niloy@example.com</p>
+        <p>📍 ঢাকা, বাংলাদেশ</p>
+      </div>
+    </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 John Doe. All rights reserved.</p>
-    <p>Designed by <a href="#">Portfolio Blogger Templates</a></p>
+    <p>&copy; 2025 Xovora. সর্বস্বত্ব সংরক্ষিত।</p>
+    <p><a href="#">উপরের দিকে ↑</a></p>
   </footer>
-
-  <script>
-    const menuIcon = document.querySelector('.menu-icon');
-    const navLinks = document.querySelector('.nav-links');
-
-    menuIcon.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-    });
-  </script>
 
 </body>
 </html>
