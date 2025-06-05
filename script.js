@@ -1,12 +1,6 @@
-const text = document.getElementById("animated-text");
-const phrases = [
-  "I am a graphic designer",
-  "I design modern brands",
-  "I create digital stories"
-];
+const menuIcon = document.querySelector('.menu-icon');
+const navLinks = document.querySelector('.nav-links');
 
-let i = 0;
-setInterval(() => {
-  text.textContent = phrases[i];
-  i = (i + 1) % phrases.length;
-}, 3000);
+menuIcon.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
