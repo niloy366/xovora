@@ -3,14 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Xovora - Portfolio</title>
+  <title>Xovora - Niloy Akon</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-  <!-- Navbar -->
+  <!-- Navigation -->
   <nav>
     <div class="logo">Xovora</div>
+    <div id="menu-toggle" class="menu-icon">&#9776;</div>
     <ul class="nav-links">
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
@@ -24,8 +26,23 @@
   <header id="home">
     <h1>Hi, I am Niloy Akon</h1>
     <h2 id="animated-text">I am a graphic designer</h2>
+
+    <!-- Social Media Icons -->
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-behance"></i></a>
+    </div>
   </header>
 
   <script src="script.js"></script>
+  <script>
+    const menuBtn = document.getElementById("menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+    menuBtn.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
 </body>
 </html>
