@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Xovora - Niloy Akon</title>
+  <title>Niloy Akon</title>
   <link rel="stylesheet" href="style.css" />
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-  <!-- Navigation -->
+  <!-- Navbar -->
   <nav>
-    <div class="logo">Xovora</div>
+    <div class="logo">Niloy Akon</div>
     <div id="menu-toggle" class="menu-icon">&#9776;</div>
     <ul class="nav-links">
       <li><a href="#home">Home</a></li>
@@ -19,30 +19,70 @@
       <li><a href="#services">Services</a></li>
       <li><a href="#portfolio">Portfolio</a></li>
       <li><a href="#contact">Contact</a></li>
+      <li><button id="dark-mode-toggle">🌙</button></li>
     </ul>
   </nav>
 
-  <!-- Hero Section -->
+  <!-- Hero -->
   <header id="home">
-    <h1>Hi, I am Niloy Akon</h1>
-    <h2 id="animated-text">I am a graphic designer</h2>
+    <h1>Hi, I’m Niloy Akon</h1>
+    <p id="animated-text">I’m a graphic designer & developer</p>
+  </header>
 
-    <!-- Social Media Icons -->
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am passionate about design, branding, and visual storytelling.</p>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <h2>My Services</h2>
+    <ul>
+      <li>Logo Design</li>
+      <li>Web Design</li>
+      <li>Social Media Graphics</li>
+      <li>Business Cards</li>
+    </ul>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/200x150?text=Project+1" alt="Project 1">
+      <img src="https://via.placeholder.com/200x150?text=Project+2" alt="Project 2">
+      <img src="https://via.placeholder.com/200x150?text=Project+3" alt="Project 3">
+      <img src="https://via.placeholder.com/200x150?text=Project+4" alt="Project 4">
+      <img src="https://via.placeholder.com/200x150?text=Project+5" alt="Project 5">
+      <img src="https://via.placeholder.com/200x150?text=Project+6" alt="Project 6">
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p>Email: julhashislamniloy@gmail.com</p>
+    <p>Phone: 01623698238</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Niloy Akon. All rights reserved.</p>
     <div class="social-icons">
       <a href="#"><i class="fab fa-instagram"></i></a>
       <a href="#"><i class="fab fa-facebook"></i></a>
       <a href="#"><i class="fab fa-twitter"></i></a>
       <a href="#"><i class="fab fa-behance"></i></a>
     </div>
-  </header>
+  </footer>
 
   <script src="script.js"></script>
-  <script>
-    const menuBtn = document.getElementById("menu-toggle");
-    const navLinks = document.querySelector(".nav-links");
-    menuBtn.addEventListener("click", () => {
-      navLinks.classList.toggle("active");
-    });
-  </script>
 </body>
 </html>
