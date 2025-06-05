@@ -157,7 +157,6 @@ body {
   max-width: 300px;
 }
 
-/* Fast Support Box Center Alignment */
 .service-card:nth-child(6) {
   grid-column: 2 / span 1;
 }
